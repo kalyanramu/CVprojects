@@ -91,9 +91,7 @@ class CentroidTracker:
 			#compute both row and column index we have NOT yet examined
 			unusedRows = set(range(0, D.shape[0])).difference(usedRows)
 			unusedCols = set(range(0, D.shape[1])).difference(usedCols)
-			if len(unusedCols) > 0:
-				print("Unused Cols : {}".format(unusedCols))
-				exit()
+
 
 			# Case: Number of exisiting object centroids >= Number of input centroids
 			if D.shape[0] >= D.shape[1]:
